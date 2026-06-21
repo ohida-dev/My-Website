@@ -53,6 +53,7 @@
     margin-top: 10px;
     font-weight: bold;
     margin-bottom: 0;
+    color: blanchedalmond;
   }
 
   .VidButton{
@@ -61,8 +62,8 @@
     height: 40px;
     width: 100px;
     border-radius: 50px;
-    border-color: blueviolet;
-    color: blueviolet;
+    border-color: rgb(172, 0, 0);
+    color: rgb(172, 0, 0);
     border-style: solid;
     transition: background-color 1s;
     transition: color 1s;
@@ -72,7 +73,7 @@
   }
 
   .VidButton:hover{
-    background-color: blueviolet;
+    background-color: rgb(172, 0, 0);
     border-color: rgb(255, 255, 255);
     color: rgb(255, 255, 255);
     cursor: pointer;
@@ -90,14 +91,14 @@
     margin-left: 10px;
     font-family: Arial;
     font-size: clamp(14px, 2vw, 18px);
-    color: gray;
+    color: rgb(255, 0, 0);
     font-style: italic;
     margin-top: 0;
     margin-bottom: 10px;
   }
 
   .Val-Text{
-    color: black;
+    color: blanchedalmond;
     transition: color 0.5s;
     font-weight: bold;
     font-size: clamp(18px, 2vw, 22px);
@@ -109,3 +110,33 @@
     color: crimson;
 
   }
+
+  .bg-vid{ 
+    position: fixed;
+    left: 0;
+    top: 0;  
+
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -2;
+}
+
+.content{
+  display: flex;
+  position: relative;
+  z-index: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center;
+}
+
+body::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: -1;
+}
