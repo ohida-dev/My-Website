@@ -127,3 +127,68 @@ nav ul li a{
 .Purple.anim{
     animation-delay: 1.5s;
 }
+
+@media (max-width: 768px) {
+
+    .hero {
+        padding: 10px 6%;
+    }
+
+    nav {
+        padding: 10px 0;
+    }
+
+    .Logo {
+        width: 75px;
+    }
+
+    nav ul li {
+        margin: 10px 5px;
+    }
+
+    nav ul li a {
+        font-size: 12px;
+    }
+
+    .login-btn {
+        font-size: 12px;
+        margin-right: 5px;
+    }
+
+    .Reg-btn {
+        padding: 10px 20px;
+        font-size: 12px;
+    }
+
+    .content {
+        margin-top: 25%;
+        max-width: 100%;
+    }
+
+    .content h1 {
+        font-size: 45px;
+    }
+
+    .content p {
+        font-size: 14px;
+        line-height: 1.6;
+        margin: 15px 0 25px;
+    }
+
+    .content .Reg-btn {
+        padding: 12px 40px;
+        font-size: 14px;
+    }
+
+    .Feature {
+        width: 140px;
+        right: 10%;
+        bottom: 5%;
+    }
+
+        .Purple {
+        width: 140px;
+        right: 10%;
+        bottom: 5%;
+    }
+}
