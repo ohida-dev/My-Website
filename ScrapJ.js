@@ -22,11 +22,11 @@
         observer.observe(project);
     });
 
-    const hamburger = document.querySelector(".hamburger");
-    const menu = document.querySelector(".menu");
+   const hamburgers = document.querySelectorAll(".hamburger");
 
-
+hamburgers.forEach(hamburger => {
     hamburger.addEventListener("click", () => {
-    menu.classList.toggle("active");
-   
+        const menu = hamburger.closest("nav").querySelector(".menu");
+        menu.classList.toggle("active");
+    });
 });

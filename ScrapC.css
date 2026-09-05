@@ -149,12 +149,49 @@ nav ul li a{
         width: 75px;
     }
 
-    nav ul li {
-        margin: 10px 5px;
+    /* HAMBURGER */
+
+    .hamburger {
+        display: block;
+        font-size: 35px;
+        color: white;
+        cursor: pointer;
+        z-index: 100;
     }
 
-    nav ul li a {
-        font-size: 12px;
+    /* MENU CLOSED */
+
+    .menu {
+        display: none;
+
+        position: absolute;
+        top: 80px;
+        left: 6%;
+        width: 88%;
+
+        padding: 20px;
+
+        background: rgba(82, 0, 117, 0.9);
+        border-radius: 15px;
+
+        text-align: center;
+
+        z-index: 99;
+    }
+
+    /* MENU OPEN */
+
+    .menu.active {
+        display: block;
+    }
+
+    .menu ul li {
+        display: block;
+        margin: 15px 0;
+    }
+
+    .nav-buttons {
+        margin-top: 20px;
     }
 
     .login-btn {
@@ -166,6 +203,9 @@ nav ul li a{
         padding: 10px 20px;
         font-size: 12px;
     }
+
+
+    /* PROJECT CONTENT */
 
     .content {
         margin-top: 25%;
@@ -187,56 +227,11 @@ nav ul li a{
         font-size: 14px;
     }
 
-    .Feature {
-        height: 0;
-        width: 0;
-        right: 10%;
-        bottom: 5%;
-    }
 
-        .Purple {
-            height: 0;
-        width: 0;
-        right: 10%;
-        bottom: 5%;
-    }
+    /* HIDE IMAGES ON PHONE */
 
-    .hamburger{
-        display: block;
-    }
-
-        .menu {
+    .Feature,
+    .Purple {
         display: none;
-        position: absolute;
-        top: 80px;
-        left: 6%;
-        width: 88%;
-        padding: 20px;
-
-        background: rgba(0, 0, 0, 0.9);
-        border-radius: 15px;
-
-        text-align: center;
     }
-
-
-    .menu.active {
-        display: block;
-    }
-
-        .menu ul {
-        display: block;
-    }
-
-
-    .menu ul li {
-        display: block;
-        margin: 15px 0;
-    }
-
-        .nav-buttons {
-        margin-top: 20px;
-    }
-
 }
-
